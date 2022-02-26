@@ -26,7 +26,8 @@
   <section class="flex-grow flex flex-wrap gap-4 items-start">
     <div
       *ngFor="let meal of meals$ | async"
-      class="bg-white bg-opacity-90 w-60 flex-grow hover:shadow-xl rounded-md overflow-hidden">
+      class="bg-white bg-opacity-90 w-60 flex-grow hover:shadow-xl rounded-md overflow-hidden cursor-pointer"
+      [routerLink]="meal.idMeal">
       <div class="h-40"><img [src]="meal.strMealThumb" class="w-full h-full object-cover" /></div>
       <div class="py-3 px-5">
         <p class="font-bold mb-0">{{ meal.strMeal }}</p>

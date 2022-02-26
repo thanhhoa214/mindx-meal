@@ -14,6 +14,9 @@ export class MealService {
       .get<MealsResponse>(`${environment.apiUrl}/search.php?s=${params.s || ''}&f=${params.f || ''}`)
       .pipe(map(({ meals }) => meals));
   }
+  getMealById(id: string) {
+    return this.http.get<MealsResponse>(`${environment.apiUrl}/lookup.php?i=${id}`).pipe(map(({ meals }) => meals[0]));
+  }
 
   getCategories() {
     return this.http
