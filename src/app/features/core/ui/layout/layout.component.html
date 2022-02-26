@@ -1,0 +1,29 @@
+<nz-layout class="min-h-screen">
+  <nz-header class="p-0 w-full z-50 sticky top-0 left-0" nzTheme="light">
+    <div class="flex justify-between items-center gap-16 h-16 w-full px-6">
+      <a routerLink="/" class="space-x-2 flex items-center">
+        <img src="assets/shopeefoodvn.png" alt="Shopee logo" class="h-6" />
+      </a>
+      <div class="flex items-end h-full">
+        <nz-tabset nzSize="large" nzLinkRouter>
+          <nz-tab>
+            <a *nzTabLink nz-tab-link routerLink="/food"> Food </a>
+          </nz-tab>
+          <nz-tab>
+            <a *nzTabLink nz-tab-link routerLink="/category"> Category </a>
+          </nz-tab>
+          <nz-tab>
+            <a *nzTabLink nz-tab-link routerLink="/area"> Area </a>
+          </nz-tab>
+        </nz-tabset>
+      </div>
+
+      <button nz-button nzType="primary" nzSize="large" class="ml-auto">Đăng nhập</button>
+    </div>
+  </nz-header>
+  <nz-content class="overflow-auto">
+    <div class="p-6 bg-white min-h-main">
+      <router-outlet></router-outlet>
+    </div>
+  </nz-content>
+</nz-layout>
