@@ -54,3 +54,21 @@ export interface Meal {
   strCreativeCommonsConfirmed: null;
   dateModified: null;
 }
+
+export interface MealBrief {
+  strMeal: string;
+  strMealThumb: string;
+  idMeal: string;
+}
+
+export interface Category {
+  strCategory: string;
+}
+
+export interface Area {
+  strArea: string;
+}
+
+export interface Ingredient {
+  strIngredient: string;
+}

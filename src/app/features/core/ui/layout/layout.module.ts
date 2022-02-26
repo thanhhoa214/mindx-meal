@@ -10,11 +10,13 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { NzInputModule } from 'ng-zorro-antd/input';
 
 const nzModules = [
   NzLayoutModule,
   NzMenuModule,
   NzIconModule,
+  NzInputModule,
   NzButtonModule,
   NzToolTipModule,
   NzAvatarModule,
